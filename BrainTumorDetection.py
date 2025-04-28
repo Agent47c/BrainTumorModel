@@ -8,7 +8,8 @@ import numpy as np
 @st.cache_resource
 def load_yolo_model():
     st.write("Loading YOLO model...")
-    return YOLO("Pre-trained model location")
+    #Pre-trained model
+    return YOLO("best.pt")
 
 # Load SAM model
 @st.cache_resource
